@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "reactProjects",
+			"path": "../reactProjects"
+		},
+		{
+			"name": "BookingManagementFE",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
