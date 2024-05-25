@@ -2,8 +2,8 @@ import PageContent from '../components/PageContent';
 
 function HomePage() {
   return (
-    <PageContent title="Welcome!">
-      <p>Browse all our amazing events!</p>
+    <PageContent title="Benvenuto!">
+      <p>Consulta i nostri appuntamenti disponibili e prenotati subito!</p>
     </PageContent>
   );
 }

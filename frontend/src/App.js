@@ -31,7 +31,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <HomePage />},
       {
-        path: 'events',
+        path: 'prenotazioni',
         element: <EventsRootLayout />,
         children: [
           {

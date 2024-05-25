@@ -22,12 +22,12 @@ function MainNavigation() {
           </li>
           <li>
             <NavLink
-              to="/events"
+              to="/prenotazioni"
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
             >
-              Events
+              Prenotazioni
             </NavLink>
           </li>
           <li>
@@ -47,7 +47,7 @@ function MainNavigation() {
                 isActive ? classes.active : undefined
               }
             >
-              Authentication
+              Login
             </NavLink>
           </li>}
           
