@@ -33,7 +33,7 @@ function EventDetailPage() {
 export default EventDetailPage;
 
 async function loadEvent(id) {
-  const response = await fetch('http://localhost:8080/events/' + id);
+  const response = await fetch('http://localhost:8081/home/getBooking/' + id);
 
   if (!response.ok) {
     throw json(
@@ -44,12 +44,13 @@ async function loadEvent(id) {
     );
   } else {
     const resData = await response.json();
-    return resData.event;
+    console.log(resData)
+    return resData;
   }
 }
 
 async function loadEvents() {
-  const response = await fetch('http://localhost:8080/events');
+  const response = await fetch('http://localhost:8081/home/getTodayAvailableBookings');
 
   if (!response.ok) {
     // return { isError: true, message: 'Could not fetch events.' };
@@ -64,7 +65,7 @@ async function loadEvents() {
     );
   } else {
     const resData = await response.json();
-    return resData.events;
+    return resData.bookings;
   }
 }
 

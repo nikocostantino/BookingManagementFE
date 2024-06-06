@@ -17,7 +17,7 @@ function EventsNavigation() {
               }
               end
             >
-              All Events
+              Slot Disponibili
             </NavLink>
           </li>
           {token && <li>

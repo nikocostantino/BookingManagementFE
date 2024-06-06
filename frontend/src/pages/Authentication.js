@@ -16,11 +16,11 @@ export async function action({request}){
 
   const data = await request.formData();
   const authData = {
-    email : data.get('email'),
+    username : data.get('username'),
     password : data.get('password'),
   };
 
-  const respose = await fetch('http://localhost:8080/'+mode, {
+  const respose = await fetch('http://localhost:8081/'+mode, {
     method: 'POST',
     headers: {
       'Content-Type':'application/json'

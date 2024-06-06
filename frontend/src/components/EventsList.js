@@ -8,14 +8,13 @@ function EventsList({events}) {
 
   return (
     <div className={classes.events}>
-      <h1>All Events</h1>
+      <h1>Tutti gli slot disponibili:</h1>
       <ul className={classes.list}>
         {events.map((event) => (
           <li key={event.id} className={classes.item}>
             <Link to={`/prenotazioni/${event.id}`}>
-              <img src={event.image} alt={event.title} />
               <div className={classes.content}>
-                <h2>{event.title}</h2>
+                <h2>{event.slot}</h2>
                 <time>{event.date}</time>
               </div>
             </Link>

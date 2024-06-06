@@ -38,8 +38,7 @@ const router = createBrowserRouter([
             index: true,
             element: <Suspense><EventsPage /></Suspense>,
             //loader: eventsLoader,
-            loader: () => import('./pages/Events').then((module)=>module.loader()),
-          },
+            loader: (args) => import('./pages/Events').then((module) => module.loaderAvailableBookings(args)),          },
           {
             path: ':eventId',
             id: 'event-detail',

@@ -21,8 +21,8 @@ function AuthForm() {
           </ul>}
           {data && data.message && <p>{data.message}</p>}
         <p>
-          <label htmlFor="email">Email</label>
-          <input id="email" type="email" name="email" required />
+          <label htmlFor="username">Username</label>
+          <input id="username" type="text" name="username" required />
         </p>
         <p>
           <label htmlFor="image">Password</label>

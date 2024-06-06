@@ -9,6 +9,9 @@ function MainNavigation() {
     <header className={classes.header}>
       <nav>
         <ul className={classes.list}>
+        <li>
+            <img src="/logo.png" alt="Logo" className={classes.logo} />
+          </li>
           <li>
             <NavLink
               to="/"
